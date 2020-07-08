@@ -131,3 +131,14 @@
   color: white;
   width: 120px;
 }
+
+.header_menu_item{
+  border-top: 1px solid #0A0C0E;
+  border-right: 1px solid #0A0C0E;
+  border-left: 1px solid #0A0C0E;
+width: 20%;
+}
+.header_menu_item:hover{
+  background-color: #2b3136;
+  border-bottom: 4px solid #11c717;
+}
