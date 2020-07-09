@@ -176,7 +176,7 @@
 }
 
 #header_menu_current_item{
-
+color: var(--cy-green);
 }
 
 .header_menu_item{
