@@ -4,12 +4,13 @@
     padding: 0px 0px 0px 0px;
   }
   :root{
-    --cy-green: #4CAF50;
+    --cy-green: #11c717;
     --cy-black: #0A0C0E;
     --cy-white: #fafafa;
   }
 
 /* #4A4F53 gray
+#11c717 this green <3
 #0A0C0E use this instead of black  */
   body, html {
     /* padding: 3px 3px 3px 3px; */
