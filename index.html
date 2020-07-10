@@ -12,132 +12,115 @@
   -FULL responsive (on my way)
   -Well designed  (on my way)
   -Attractive to user ( on my way)
+
+  Features:
+
  
-  BUG sheet:
-  -edit table of contents 
+  BUG's:
+  -edit nav bar
       -make it responsive to mobile
-  -add a atractive image in home under start
-  -figure out how to high light the 
-  curent page in table of contents 
+  -add id's and 
     -->
-</head> 
+</head>
 
 <body>
   <div class="header">
-   <h1>the<a style="color: #11c717;">CYBER</a>bro</h1>
+    <h1>the<a style="color: #11c717;">CYBER</a>bro</h1>
     <!--Table of contests-->
 
-    <table border="1"  class="table_of_contents">
+    <table border="1" class="table_of_contents">
       <tr>
         <td class="header_menu_item"><a id="header_menu_current_item" href="index.html">Home</a></th>
-        <td class="header_menu_item"><a href="">Blog</a></td>
-        <td class="header_menu_item"><a href="">Support Us</a></td>
-        <td class="header_menu_item"><a href="#">Info</a></td>
+        <td class="header_menu_item"><a href="#blog">Blog</a></td>
+        <td class="header_menu_item"><a href="#support_us">Support Us</a></td>
+        <td class="header_menu_item"><a href="#info">Info</a></td>
         <td class="header_menu_item"><a href="https://t.me/thecyberchat">Chat</a></td>
-        <td class="header_menu_item">   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a></td>
+        <td class="header_menu_item"> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a></td>
       </tr>
     </table>
 
 
   </div>
 
-  <div class="left_footer">   <!-- do not change here-->
-   <br>
+  <div class="left_footer">
+    <!-- do not change here-->
+    <br>
   </div>
 
-  <div id="div_with_wp" class="main">
-    <!-- <marquee style="color: red; background-color: #303133;">
-         <b>New Site!  New Site!  New Site!</b></marquee> -->
+  <div class="main" style="height: 1400px;">
+     <marquee style="color: #11c717;">
+         <b>Site in development. May found some bug's. </b></marquee> 
 
     <div class="welcome_div">
-    <br>
-    <br>
-    <h2>Welcome <a style="color: #11c717;"> User</a> </h2>
-    <br>
-    <button class="nice_button"><b>Let's Start</b></button>
-    <br>
-    <br>
+      <br>
+      <br>
+      <h2>Welcome <a style="color: #11c717;"> User</a> </h2>
+      <br>
+      <button class="nice_button"><b>Let's Start</b></button>
+      <br>
+      <br>
 
-    <p>Welcome <form action="PHP/get_ip.php"> ! We are glad to see you here. <br>
-       Come take a look at our community</p>
+      <p>Welcome {user ip}
+      <form action="PHP/get_ip.php"></form> ! We are glad to see you here. <br>
+      Come take a look at our community</p>
 
-     <br>
-     <hr>
-  </div>
-  <p>all not important content here</p>
-  <br>   
-<!--
-  <div class="container">
-    <form action="PHP/form_page.php">
-  
-      <label>Name</label>
-      <input type="text" name="name" placeholder="Your name..">
-  
-      <label>Email</label>
-      <input type="text"  name="email" placeholder="Your email..">
-  
-      <label for="subject">Subject</label>
-      <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
-    </form>
-  </div> 
--->
-    <!-- some lists here with info from weboas.is/-->
+      <br>
+      <hr>
+    </div>
+    <br>
+    <img src="images/world_map.png" alt="" style="width: 100%;">
    
   </div>
 
-  <div class="right_footer"><!-- do not change here-->
+  <div class="right_footer">
+    <!-- do not change here-->
     <br>
   </div>
-   <!-- footer -->
-<footer>
-  <div class="footer">
+  <!-- footer -->
+  <footer>
+    <div class="footer">
 
- 
-    <h2><u>Contact Us</u></h2>
-    <table>
-    <tr>
-      <td style="width: 20%;"><img src="logos/instagram.png"  class="footer_contact_image"
-         onclick="window.location.href='https://www.instagram.com/the_cyber_bro/';"
-          alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"
-          ></img></td>
 
-      <td style="width: 20%;"><img src="logos/youtube.png" class="footer_contact_image"
-          onclick="window.location.href='https://www.youtube.com/channel/UCHIEfPewtcI0uhQfcE80VcQ';"
-          alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"
-          ></img></td>
+      <h2><u>Contact Us</u></h2>
+      <table>
+        <tr>
 
-      <td style="width: 20%;"><img src="logos/twitter.png" class="footer_contact_image"
-         onclick="window.location.href='https://twitter.com/gabi68140123';"
-          alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"
-          ></img></td>
 
-      <td style="width: 20%;"><img src="logos/telegram.png" class="footer_contact_image"
-         onclick="window.location.href='https://t.me/thecyberchat';"
-          alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"
-          ></img></td>
+          <td style="width: 20%;"><img src="logos/twitter.png" class="footer_contact_image"
+              onclick="window.location.href='https://twitter.com/gabi68140123';"
+              alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"></img></td>
 
-      <td style="width: 20%;"><img src="logos/github.png" class="footer_contact_image"
-         onclick="window.location.href='https://github.com/theCYBERbro';"
-          alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"
-          ></img></td>
-      </tr>
+          <td style="width: 20%;"><img src="logos/telegram.png" class="footer_contact_image"
+              onclick="window.location.href='https://t.me/thecyberchat';"
+              alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"></img></td>
 
-  </table>
+          <td style="width: 20%;"><img src="logos/github.png" class="footer_contact_image"
+              onclick="window.location.href='https://github.com/theCYBERbro';"
+              alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"></img></td>
 
-    <div style="text-align: left;">
-      <br>
-      <hr>
-      <br>
-      <p style="font-size: small;"> &copy;2020 Copyright <strong>theCYBERbro</strong> </p>
+          <td style="width: 20%;"><img src="logos/instagram.png" class="footer_contact_image"
+              onclick="window.location.href='https://www.instagram.com/the_cyber_bro/';"
+              alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"></img></td>
+
+          <td style="width: 20%;"><img src="logos/youtube.png" class="footer_contact_image"
+              onclick="window.location.href='https://www.youtube.com/channel/UCHIEfPewtcI0uhQfcE80VcQ';"
+              alt="cyber cybersecurity hacker infosec security tech gdpr iot cryptocurency"></img></td>
+
+        </tr>
+
+      </table>
+
+      <div style="text-align: left;">
+        <br>
+        <hr>
+        <br>
+        <p style="font-size: small;"> &copy;2020 Copyright <strong>theCYBERbro</strong> </p>
+      </div>
+
     </div>
-
-  </div>
-</footer>
+  </footer>
 
 </body>
 
