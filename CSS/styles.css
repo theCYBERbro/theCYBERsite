@@ -39,6 +39,10 @@ a {
 table {
   width: 100%;
 }
+
+.image {
+  width: 100%;
+}
 table.table_of_contents,
 td.table_of_contents {
   border: 1px solid var(--cy-black);
@@ -64,24 +68,6 @@ td {
   text-align: center;
 }
 
-div.right_footer {
-  min-width: 10%;
-  min-height: 70%;
-  background: transparent;
-  color: white;
-  float: right;
-  text-align: center;
-}
-
-div.left_footer {
-  min-width: 10%;
-  min-height: 70%;
-  background: transparent;
-  color: white;
-  float: left;
-  text-align: center;
-}
-
 .header {
   width: 100%;
   height: 10%;
@@ -95,8 +81,11 @@ div.left_footer {
 }
 .main {
   padding-top: 10%;
+  padding-bottom: 25%;
   width: 80%;
-  min-height: 1000px;
+  margin-left: 8%;
+  margin-right: 8%;
+   min-height: 3200px;  /*  Height of all page */
   background-color: transparent;
   color: #000;
   float: left;
@@ -116,12 +105,22 @@ div.left_footer {
   background-color: var(--cy-green);
 }
 
-div.welcome_div {
+div.centred_div {
   text-align: center;
 }
 u {
   text-decoration: none;
   border-bottom: 4px solid var(--cy-green);
+}
+input[type=text],[type=email],textarea {
+  border: none;
+  width: 250px;
+  border-bottom: 2px solid var(--cy-green);
+  transition: 0.4s ease-in-out;
+}
+input[type=text]:focus,[type=email]:focus,textarea:focus {
+width: 100%;
+background-color: #d3d2d2
 }
 
 .nice_button {
@@ -158,23 +157,92 @@ u {
   border-bottom: 4px solid var(--cy-green);
 }
 
-.image {
+.image_background{/*this thing stays in .card*/
+  border-radius: 11px;
+  background-color: #4A4F53;
+  background: -o-repeating-linear-gradient(--cy-black);
+}
+div.in_card_div{
+  margin: 20px;
+}
+.card_image{
   width: 100%;
 }
+.card{
+  border: 2px solid var(--cy-black);
+  margin-top: 20px;
+  border-radius: 11px;
+  width: 100%;
+}
+
+.info_image_background{/*this thing stays in .info_card*/
+  border-radius: 11px;
+}
+div.in_info_card_div{
+  margin: 20px;
+  text-align:center;
+}
+
+.info_card{
+  box-shadow: 0 0 7px var(--cy-green);
+  border: 0.1px solid var(--cy-green);
+  margin-top: 20px;
+  margin: 10px;
+  border-radius: 11px;
+  width: 100%;
+}
+
+.info_block{
+  width: 33%;
+  min-height: 300px;
+  float: left;
+}
+.contact_form{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+#blog,
+ #support_us,
+ #info{
+padding-top: 15%;
+
+}
+#blog{
+
+}
+#support_us{
+
+}
+#info{
+
+}
+
 @media screen and (min-width: 1100px) {
-  .image {
+  .image , .card, .contact_form{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .main {
     padding-top: 100px;
+    /* height: 3000px; */
   }
-  .header_menu_item {
-
+  input[type=text],[type=email],textarea {
+    min-width: 280px;
   }
+  #blog,
+ #support_us,
+ #info{
+padding-top: 100px;
+}
+.info_block{
+  width: 100%;
+}
 }

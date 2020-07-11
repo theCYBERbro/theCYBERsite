@@ -9,19 +9,8 @@
   <title>theCYBERbro</title>
   <!--
     TODO:
-  -FULL responsive (on my way)
-  -Well designed  (on my way)
-  -Attractive to user ( on my way)
-
-  Features:
-
- 
-  BUG's:
-  -edit nav bar
-      -make it responsive to mobile
-  -make cards for blog part
-  -add text to info
-  -add something interesting to support us
+  make it look cool 
+  make it work
     -->
 </head>
 
@@ -56,84 +45,26 @@
       <br>
       <h2>Welcome <a style="color: #11c717;"> User</a> </h2>
       <br>
-      <button class="nice_button"><b>Let's Start</b></button>
+      
+<div class="contact_form">
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <b>Your Name:</b>  <input type="text" name="name" />  
+      </p>
+      <p>
+        <b>Your Email:</b> <input type="email" name="email" />
+      </p>
+      <p>
+        <b>Message: </b><textarea name="message"></textarea>
+      </p>
       <br>
       <br>
-
-      <p>Welcome <del>{user ip}</del> !
-      <form action="PHP/get_ip.php"></form> We are glad to see you here. <br>
-      Come take a look at our community</p>
-
       <br>
-      <marquee style="color: #11c717;">
-        <b>Site in development. May found some bug's. Please report them.</b></marquee>
-      <hr>
-    </div>
-    <br>
-    <img src="images/world_map.png" alt="" class="image">
-
-    <!-- BLOG  -->
-    <div id="blog">
-      <div class="centred_div">
-        <h2><u>Blog</u></h2>
-      </div>
-      <div class="card">
-        <div class="in_card_div">
-          <h3> This is title dudmbass</h3>
-          <div class="image_background">
-            <img src="images/planet.png" alt="" class="card_image">
-          </div>
-          text mdfk shitty ass bitch
-        </div>
-      </div>
-    </div>
-
-    <!-- INFO -->
-    <div id="info">
-      <div class="centred_div">
-        <h2><u>Info</u></h2>
-      </div>
-      <div class="info_block">
-        <div class="info_card">
-          <div class="in_info_card_div">
-            <h3> This is title</h3>
-            <div class="info_image_background">
-              <img src="images/planet.png" alt="" class="card_image">
-            </div>
-            Simple text here, description
-          </div>
-        </div>
-      </div>
-      <div class="info_block">
-        <div class="info_card">
-          <div class="in_info_card_div">
-            <h3> This is title</h3>
-            <div class="info_image_background">
-              <img src="images/planet.png" alt="" class="card_image">
-            </div>
-            Simple text here, description
-          </div>
-        </div>
-      </div>
-      <div class="info_block">
-        <div class="info_card">
-          <div class="in_info_card_div">
-            <h3> This is title</h3>
-            <div class="info_image_background">
-              <img src="images/planet.png" alt="" class="card_image">
-            </div>
-            Simple text here, description
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  SUPPORT US -->
-    <div id="support_us">
-      <div class="centred_div">
-        <h2><u>Support Us</u></h2>
-      </div>
-    </div>
+      <p>
+        <button class="nice_button" type="submit">Send</button>
+      </p>
+    </form>
+  </div>
 
   </div><!--end of main-->
 
@@ -141,7 +72,7 @@
   <!-- footer -->
   <footer>
     <div class="footer">
-      <h2><a href="contact_form.html"><u>Contact Us</u></a></h2>
+      <h2><u>Contact Us</u></h2>
       <table>
         <tr>
 
