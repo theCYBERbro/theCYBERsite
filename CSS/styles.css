@@ -85,7 +85,7 @@ td {
   width: 80%;
   margin-left: 8%;
   margin-right: 8%;
-   min-height: 3200px;  /*  Height of all page */
+   min-height: 2800px;  /*  Height of all page */
   background-color: transparent;
   color: #000;
   float: left;
@@ -235,8 +235,7 @@ padding-top: 15%;
     /* height: 3000px; */
   }
   input[type=text],[type=email],textarea {
-    min-width: 280px;
-  }
+width: 100%;  }
   #blog,
  #support_us,
  #info{
