@@ -115,6 +115,7 @@ u {
 input[type=text],[type=email],textarea {
   border: none;
   width: 250px;
+  background-color: transparent ;
   border-bottom: 2px solid var(--cy-green);
   transition: 0.4s ease-in-out;
 }
@@ -187,7 +188,7 @@ div.in_info_card_div{
   box-shadow: 0 0 7px var(--cy-green);
   border: 0.1px solid var(--cy-green);
   margin-top: 20px;
-  margin: 10px;
+  /* margin: 10px; */
   border-radius: 11px;
   width: 100%;
 }
