@@ -160,14 +160,18 @@ background-color: #d3d2d2
 
 .image_background{/*this thing stays in .card*/
   border-radius: 11px;
-  background-color: #4A4F53;
+  background-color: #e2e2e2;
   background: -o-repeating-linear-gradient(--cy-black);
 }
 div.in_card_div{
   margin: 20px;
 }
 .card_image{
-  width: 100%;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
 }
 .card{
   border: 2px solid var(--cy-black);
@@ -187,15 +191,16 @@ div.in_info_card_div{
 .info_card{
   box-shadow: 0 0 7px var(--cy-green);
   border: 0.1px solid var(--cy-green);
-  margin-top: 20px;
-  /* margin: 10px; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  min-height: 300px;
   border-radius: 11px;
   width: 100%;
 }
 
 .info_block{
   width: 33%;
-  min-height: 300px;
+  /* min-height: 550px; */
   float: left;
 }
 .contact_form{
