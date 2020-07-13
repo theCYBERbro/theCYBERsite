@@ -85,7 +85,7 @@ td {
   width: 80%;
   margin-left: 8%;
   margin-right: 8%;
-   min-height: 2800px;  /*  Height of all page */
+  min-height: 2800px;  /*  Height of all page */
   background-color: transparent;
   color: #000;
   float: left;
@@ -166,7 +166,7 @@ height: 100%;
 background-color: transparent;
 color: #fff;
 border: none;
-font: 17px bolder;
+font:16px  bolder ;
 }
 
 .image_background{/*this thing stays in .card*/
