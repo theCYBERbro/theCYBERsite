@@ -152,10 +152,21 @@ background-color: #d3d2d2
   border-right: 1px solid var(--cy-black);
   border-left: 1px solid var(--cy-black);
   width: 20%;
+  text-decoration: none;
+  background-color: none;
+  color: #fff;
 }
 .header_menu_item:hover {
   background-color: #2b3136;
   border-bottom: 4px solid var(--cy-green);
+}
+.header_menu_button{
+width: 100%;
+height: 100%;
+background-color: transparent;
+color: #fff;
+border: none;
+font: 17px bolder;
 }
 
 .image_background{/*this thing stays in .card*/
@@ -182,6 +193,8 @@ div.in_card_div{
 
 .info_image_background{/*this thing stays in .info_card*/
   border-radius: 11px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 div.in_info_card_div{
   margin: 20px;
@@ -193,16 +206,19 @@ div.in_info_card_div{
   border: 0.1px solid var(--cy-green);
   margin-top: 30px;
   margin-bottom: 20px;
-  min-height: 300px;
+  min-height: 330px;
   border-radius: 11px;
   width: 100%;
 }
 
 .info_block{
-  width: 33%;
-  /* min-height: 550px; */
+  display: block;
+  width: 29%;
+  margin-left: 2.1%;
+  margin-right: 2.1%;
   float: left;
 }
+
 .contact_form{
   display: block;
   margin-left: auto;
@@ -232,7 +248,9 @@ padding-top: 15%;
     margin-right: auto;
     width: 50%;
   }
-
+  .info_card{
+    min-height: 370px;
+  }
 }
 
 @media screen and (max-width: 700px) {
