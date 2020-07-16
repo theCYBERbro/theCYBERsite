@@ -3,6 +3,7 @@
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+
 :root {
   --cy-green: #11c717;
   --cy-black: #0a0c0e;
@@ -81,11 +82,11 @@ td {
 }
 .main {
   padding-top: 10%;
-  padding-bottom: 25%;
+  /* padding-bottom: 25%; */
   width: 84%;
-  margin-left:  8%;  /* the problem should be here*/
+  margin-left: 8%;
   margin-right: 8%;
-  min-height: 2800px;  /*  Height of all page */
+  min-height: 2800px; /*  Height of all page */
   background-color: transparent;
   color: #000;
   float: left;
@@ -105,23 +106,27 @@ td {
   background-color: var(--cy-green);
 }
 
-div.centred_div {
+.centred_div {
   text-align: center;
 }
 u {
   text-decoration: none;
   border-bottom: 4px solid var(--cy-green);
 }
-input[type=text],[type=email],textarea {
+input[type="text"],
+[type="email"],
+textarea {
   border: none;
   width: 250px;
-  background-color: transparent ;
+  background-color: transparent;
   border-bottom: 2px solid var(--cy-green);
   transition: 0.4s ease-in-out;
 }
-input[type=text]:focus,[type=email]:focus,textarea:focus {
-width: 100%;
-background-color: #d3d2d2
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  width: 100%;
+  background-color: #d3d2d2;
 }
 
 .nice_button {
@@ -160,50 +165,52 @@ background-color: #d3d2d2
   background-color: #2b3136;
   border-bottom: 4px solid var(--cy-green);
 }
-.header_menu_button{
-width: 100%;
-height: 100%;
-background-color: transparent;
-color: #fff;
-border: none;
-font:16px  bolder ;
+.header_menu_button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font: 16px bolder;
 }
 
-.image_background{/*this thing stays in .card*/
+.image_background {
+  /*this thing stays in .card*/
   border-radius: 11px;
   background-color: #e2e2e2;
   background: -o-repeating-linear-gradient(--cy-black);
 }
-div.in_card_div{
+div.in_card_div {
   margin: 20px;
 }
-.card_image{
+.card_image {
   width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: auto;
 }
-.card{
+.card {
   border: 2px solid var(--cy-black);
   margin-top: 20px;
   border-radius: 11px;
   width: 100%;
 }
 
-.info_image_background{/*this thing stays in .info_card*/
+.info_image_background {
+  /*this thing stays in .info_card*/
   border-radius: 11px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-div.in_info_card_div{
+div.in_info_card_div {
   margin: 20px;
-  text-align:center;
+  text-align: center;
 }
 
-.info_card{
+.info_card {
   box-shadow: 0 0 7px var(--cy-green);
-  border: 0.1px solid var(--cy-green);
+  border: 1px solid var(--cy-green);
   margin-top: 30px;
   margin-bottom: 20px;
   min-height: 330px;
@@ -211,7 +218,7 @@ div.in_info_card_div{
   width: 100%;
 }
 
-.info_block{
+.info_block {
   display: block;
   width: 29%;
   margin-left: 2.1%;
@@ -219,53 +226,64 @@ div.in_info_card_div{
   float: left;
 }
 
-.contact_form{
+.contact_form {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: max-content;
 }
+.header_menu_item button{
+font-weight: 800;
+}
+
 #blog,
- #support_us,
- #info{
-padding-top: 15%;
-
+#support_us,
+#info {
+  padding-top: 15%;
 }
-#blog{
-
+#blog {
 }
-#support_us{
-
+#support_us {
+  /* height: 50px; */
 }
-#info{
-
+#info {
+  min-height: 300px;
 }
 
-@media screen and (min-width: 1100px) {
-  .image , .card, .contact_form{
+@media only screen and (min-width: 1100px) {
+  .image,
+  .card,
+  .contact_form {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
-  .info_card{
-    min-height: 370px;
+  .info_card {
+    min-height: 390px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .main {
     padding-top: 100px;
-    /* height: 3000px; */
+    min-height: 3500px; 
   }
-  input[type=text],[type=email],textarea {
-width: 100%;  }
+  input[type="text"],
+  [type="email"],
+  textarea {
+    width: 100%;
+  }
   #blog,
- #support_us,
- #info{
-padding-top: 100px;
-}
-.info_block{
-  width: 100%;
-}
+  #support_us,
+  #info {
+    padding-top: 100px;
+  }
+  .info_block {
+    width: 100%;
+  }
+  #info {
+    min-height: 1240px;
+  }
+
 }

@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="icon" type="image/gif/png" href="logos/the_cyber_bro.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>theCYBERbro</title>
   <!--
     TODO:
@@ -20,8 +23,7 @@
   BUG's:
   -edit nav bar
       -make it responsive to mobile
-  -fix that info card spacing
-  -add something interesting to support us
+  -
     -->
 </head>
 
@@ -32,12 +34,32 @@
 
     <table border="1" class="table_of_contents">
       <tr>
-        <td class="header_menu_item"><button class="header_menu_button" id="header_menu_current_item" onclick="window.location.href='index.html';">Home</button></th>
-        <td class="header_menu_item"><button class="header_menu_button" onclick="window.location.href='index.html#blog';">Blog</button></td>
-        <td class="header_menu_item"><button class="header_menu_button" onclick="window.location.href='index.html#info';">Info</button></td>
-        <td class="header_menu_item"><button class="header_menu_button" onclick="window.location.href='index.html#support_us';">Support Us</button></td>
-        <td class="header_menu_item"><button class="header_menu_button" onclick="window.location.href='contact_form.html';">Contact</button></td>
-          
+        <td class="header_menu_item"><button class="header_menu_button" id="header_menu_current_item"
+            onclick="window.location.href='index.html';">
+            Home
+            <i class="fa fa-home"></i>
+          </button></th>
+        <td class="header_menu_item"><button class="header_menu_button"
+            onclick="window.location.href='index.html#blog';">
+            Blog
+            <i class="fa fa-bookmark"></i>
+          </button></td>
+        <td class="header_menu_item"><button class="header_menu_button"
+            onclick="window.location.href='index.html#info';">
+            Info
+            <i class="fa fa-info-circle"></i>
+          </button></td>
+        <td class="header_menu_item"><button class="header_menu_button"
+            onclick="window.location.href='index.html#support_us';">
+            Support Us
+            <i class="fa fa-plus-circle"></i>
+          </button></td>
+        <td class="header_menu_item"><button class="header_menu_button"
+            onclick="window.location.href='contact_form.html';">
+            Contact
+            <i class="fa fa-envelope"></i>
+          </button></td>
+
       </tr>
     </table>
 
@@ -46,7 +68,7 @@
 
 
 
-  <div class="main" >
+  <div class="main">
 
     <!-- HOME -->
     <div class="centred_div">
@@ -54,7 +76,7 @@
       <br>
       <h2>Welcome <a style="color: #11c717;"> User</a> </h2>
       <br>
-      <button class="nice_button"><b>Let's Start</b></button>
+      <button class="nice_button" onclick="window.location.href='index.html#blog';"><b>Let's Start</b></button>
       <br>
       <br>
 
@@ -91,7 +113,6 @@
       <div class="centred_div">
         <h2><u>Info</u></h2>
       </div>
-      <center>
       <div class="info_block">
         <div class="info_card">
           <div class="in_info_card_div">
@@ -112,8 +133,8 @@
               <img src="logos/question.png" alt="" class="card_image">
             </div>
             We always ready for questions.
-            You can ask your question by pressing 
-            "contact us" in the footer of thr page. 
+            You can ask your question by pressing
+            "contact us" in the footer of thr page.
           </div>
         </div>
       </div>
@@ -128,9 +149,8 @@
           </div>
         </div>
       </div>
-    </center>
     </div>
-
+    <br>
     <!--  SUPPORT US -->
     <div id="support_us">
       <div class="centred_div">
@@ -146,7 +166,8 @@
       </div>
     </div>
 
-  </div><!--end of main-->
+  </div>
+  <!--end of main-->
 
 
   <!-- footer -->
