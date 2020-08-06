@@ -246,7 +246,9 @@ font-weight: 800;
 #support_us {
 } 
 */
-
+#ip{
+  font-weight: bold;
+}
 #info {
   min-height: 300px;
 }

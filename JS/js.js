@@ -9,9 +9,15 @@ function updateCurrentYear(){
 
  }
 
-function getUserIp(){
-  $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
-    console.log(data)
-})
+ function getUserIp(){
 
-}
+  $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+  var response = JSON.stringify(data, null, 2);
+  var str = JSON.parse(response);
+  var ipAdress = str['geobytesremoteip'];
+  
+  document.getElementById("ip").innerHTML=ipAdress;
+  console.log(ipAdress);
+  });
+  
+  }
