@@ -241,11 +241,12 @@ font-weight: 800;
 #info {
   padding-top: 15%;
 }
-#blog {
+/* #blog {
 }
 #support_us {
-  /* height: 50px; */
-}
+} 
+*/
+
 #info {
   min-height: 300px;
 }
